@@ -68,50 +68,6 @@ public class Tree implements PrintableTree {
 
         traverse(root.rightNode, space, false, false, stick);
 
-
-        // Process left child first
-//        traverse(root.leftNode, space, true, false, new HashSet<>(verticalLines));
-//
-//        // Determine prefix and vertical lines
-//        StringBuilder prefix = new StringBuilder();
-//        for (int i = 0; i < space - String.valueOf(root.data).length(); i++) {
-//            if (verticalLines.contains(i)) {
-//                prefix.append("│");
-//            } else {
-//                prefix.append(" ");
-//            }
-//        }
-//
-//        if (!isRoot) {
-//            if (isLeft) {
-//                prefix.append("┌");
-//            } else {
-//                prefix.append("└");
-//            }
-//        }
-//        prefix.append(root.data);
-//
-//        if (root.rightNode != null && root.leftNode != null) {
-//            prefix.append("┤");
-//        } else if (root.leftNode != null) {
-//            prefix.append("┘");
-//        } else if (root.rightNode != null) {
-//            prefix.append("┐");
-//        }
-//
-//        printed.append(prefix.toString()).append("\n");
-//
-//        // Update vertical lines set
-//        if (!isRoot) {
-//            if (isLeft) {
-//                verticalLines.add(space - String.valueOf(root.data).length());
-//            } else {
-//                verticalLines.remove(space - String.valueOf(root.data).length() - 1);
-//            }
-//        }
-//
-//        // Process right child
-//        traverse(root.rightNode, space, false, false, new HashSet<>(verticalLines));
     }
 
 }
